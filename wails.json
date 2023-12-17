@@ -1,0 +1,22 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "LE7EL",
+  "outputfilename": "LE7EL XR Launcher",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "info": {
+    "companyName": "LE7EL XR AS",
+    "comments": "",
+    "copyright": "LE7EL XR AS",
+    "description": "LE7EL XR Launcher",
+    "productVersion": "1.0.5",
+    "productName": "LE7EL XR Launcher",
+    "version": "1.0.5"
+  }
+}

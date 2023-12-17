@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App Download</title>
+</head>
+<body>
+<a href="https://example.com/path/to/your/WailsAppInstaller.exe" id="download-link">Download My App</a>
+<script>
+    function launchApp() {
+        const appScheme = 'le7el://?appId=95bc6086-4ffc-42ef-b3a4-905bf18c4618';
+        const downloadLink = document.getElementById('download-link');
+
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        iframe.src = appScheme;
+
+        setTimeout(() => {
+            document.body.removeChild(iframe);
+        }, 2000);
+    }
+
+    document.getElementById('download-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        launchApp();
+    });
+</script>
+</body>
+</html>
